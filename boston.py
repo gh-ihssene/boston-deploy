@@ -12,7 +12,7 @@ This app predicts the **Boston House Price**!
 st.write('---')
 
 # Loads the Boston House Price Dataset
-boston = pd.read_csv('/home/ihssene/Desktop/projects/data/boston.csv')
+boston = pd.read_csv('https://github.com/gh-ihssene/boston-deploy/blob/main/boston.csv')
 X = boston.drop(columns=['MEDV'], axis=1)
 Y = boston["MEDV"]
 st.write(X)
